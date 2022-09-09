@@ -1,38 +1,330 @@
-.App {
-  text-align: center;
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap');
+header{
+  width: 100%;
+  background-color: snow;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: wrap row;
+  justify-content: space-around;
 }
-
-.App-link {
-  color: #61dafb;
+#logo{
+  line-height: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ul{
+  display: flex;
+  justify-content: space-between;
+}
+li{
+  list-style: none;
+  padding: 10px;
+  line-height: 40px;
+}
+#menu-icon{
+  display: none;
+}
+@media (min-width: 700px) {
+  ul li {
+   font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+  #logo{
+      line-height: 62px;
+  }
+}
+
+.banner{
+  width: 100%;
+  background-color: #96efc3;
+  padding: 10px;
+  border-radius: 5px 5px 10px 40px;
+}
+.banner img{
+
+  width: 100%;
+}
+.banner h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  
+}
+.banner p{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 900px) {
+ .banner{
+  width: 100%;
+  height: auto;
+ }
+ .banner img{
+      height: 600px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+ }
+ .banner h2{
+  margin-top: -30px;
+ }
+ .banner p{
+  margin-bottom: 10px;
+ }
+}
+.tittle-products{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tittle-products h3{
+  font-size: 26px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.tittle-products p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.cards{
+  display:block;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  
+}
+.card{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 20px;
+ 
+}
+.card-img{
+  width: 40%;
+ 
+}
+.card-img img{
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.card-info{
+  width: 60%;
+  text-align: left;
+  padding-left: 10px;
+}
+.card-info h4{
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 24px;
+  border-bottom: 3px solid snow;
+  
+}
+
+.card-info p{
+  margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+@media (min-width: 1000px) {
+  .tutorial button{
+      width: 150px;
+  }
+  .card{
+      width: 500px;
+      height: auto;
+  }
+  .card-info h4{
+      font-size: 24px;
+  }
+  .tutorial-img{
+      width: 100%;
+      height: auto;
+  }
+  .tutorial-img img {
+      display: block;
+      width: auto !important ;
+      margin: 0 auto;
+      overflow: hidden;
+  }
+  
+  .card-info p{
+      font-size: 18px;
+      margin-top: 50px;
+      margin-bottom: 40px;
+  }
+  .card-info button{
+      margin-top: 30px;
+  }
+ }
+ @media (min-width: 1200px) {
+  .card{
+      height: 400px;
+  }
+  
+ }
+ @media (min-width: 1400px) {
+  .cards{
+      justify-content: space-between;
+  }
+ 
+ 
+  
+ }
+.card-color-amarillo{
+  width: 100%;
+  background-color: #fcbf4a;
+}
+.card-color-rojo{
+  width: 100%;
+  background-color: #ff805c;
+}
+.card-color-aqua{
+  width: 100%;
+  background-color: #96efc3;
+}
+.card-color-verde{
+  width: 100%;
+  background-color: #bef291;
+}
+
+.card-info button{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+  height: 40px;
+  padding: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  line-height: 0px;
+}
+.card-info button:hover{
+ background-color: rgb(27, 27, 27);
+ color: snow;
+ transition: .5s;
+}
+.foodtoweek{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.foodtoweek h3{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.foodtoweek img{
+  width: 100%;
+  
+}
+.tutorial{
+  
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.tutorial h3{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.tutorial .tutorial-img{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+.tutorial .tutorial-text{
+ margin-top: 10px;
+ display: block;
+ 
+}
+.tutorial .tutorial-text h3{
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.tutorial .tutorial-text .tutorial-text_info{
+  display: flex;
+  flex-flow: wrap row;
+  margin-top: 20px;
+}
+.tutorial .tutorial-text .tutorial-text_info span{
+  font-size: 40px;
+}
+.tutorial-text_infoCompleta{
+  display: block;
+  width: 90%;
+  
+  
+
+}
+.tutorial-text_infoCompleta h4{
+  font-weight: bolder;
+  font-size: 20px;
+}
+.tutorial-text_infoCompleta p{
+  font-weight: 200;
+  font-size: 16px;
+}
+.tutorial button{
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: snow;
+  background-color: black;
+}
+
+.tutorial-img img{
+  width: 100%;
+  overflow: hidden;
+}
+.button{
+  padding: 10px;
+  border-radius: 5px;
+  color: snow;
+  background-color: rgb(30, 30, 30);
+}
+
+.form{
+  width: 100%;
+  display: block;
+  margin: 5px auto;
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+}
+.form button{
+  width: 100px;
+}
+
+@media (min-width: 600px) {
+  .banner {
+    width: 100%;
+    margin: 0 auto;
   }
 }
