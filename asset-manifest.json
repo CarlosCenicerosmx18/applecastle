@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/applecastle/static/css/main.c05531ef.css",
+    "main.js": "/applecastle/static/js/main.d82864cc.js",
+    "static/js/787.61a4bf94.chunk.js": "/applecastle/static/js/787.61a4bf94.chunk.js",
+    "static/media/menu.png": "/applecastle/static/media/menu.ba8bdabaabe01e84d826.png",
+    "static/media/red.png": "/applecastle/static/media/red.660ecebdd3964a6bfd1e.png",
+    "static/media/circular-color@2x.png": "/applecastle/static/media/circular-color@2x.60ccaeca30f40be00578.png",
+    "static/media/aqua.png": "/applecastle/static/media/aqua.4d1a2ecaabb663b71a5b.png",
+    "static/media/kids.png": "/applecastle/static/media/kids.188956f8203aa1317166.png",
+    "static/media/green.png": "/applecastle/static/media/green.7df416241d1e08c7dde7.png",
+    "static/media/solo-positivo@2x.png": "/applecastle/static/media/solo-positivo@2x.ffdbd0789672b72bce2c.png",
+    "index.html": "/applecastle/index.html",
+    "main.c05531ef.css.map": "/applecastle/static/css/main.c05531ef.css.map",
+    "main.d82864cc.js.map": "/applecastle/static/js/main.d82864cc.js.map",
+    "787.61a4bf94.chunk.js.map": "/applecastle/static/js/787.61a4bf94.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c05531ef.css",
+    "static/js/main.d82864cc.js"
+  ]
+}
